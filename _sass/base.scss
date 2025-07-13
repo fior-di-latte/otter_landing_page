@@ -14,11 +14,13 @@ html {
 body {
 	font-size: 2rem;
 	background-color: $body-color;
+	font-family: 'Anta', sans-serif;
 }
 
 .subPageBody {
 	background-color: #171717;
 	color: #fff;
+	font-family: $font;
 }
 
 .subPageBody .markdown-body, .subPageBody .markdown-body h1, .subPageBody .markdown-body h2, .subPageBody .markdown-body h3, .subPageBody .markdown-body h4, .subPageBody .markdown-body h5, .subPageBody .markdown-body h6, .subPageBody .markdown-body p, .subPageBody .markdown-body li {
