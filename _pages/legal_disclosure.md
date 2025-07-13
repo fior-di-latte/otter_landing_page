@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Imprint
+title: Legal Disclosure
 include_in_header: false
 ---
 
