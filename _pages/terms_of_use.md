@@ -1,6 +1,6 @@
 ---
 layout: page
-title: What's New
+title: Terms of Use
 include_in_header: false
 ---
 
