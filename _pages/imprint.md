@@ -21,6 +21,4 @@ Phone: +49 156 79 657 010
 E-Mail: felix.digitallabs@proton.me
 
 **German VAT ID (USt-IdNr, according to § 27 a Umsatzsteuergesetz)**
-
-Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:
 TBD

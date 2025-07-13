@@ -17,7 +17,12 @@ body {
 }
 
 .subPageBody {
-	background-color: #fff;
+	background-color: #171717;
+	color: #fff;
+}
+
+.subPageBody .markdown-body, .subPageBody .markdown-body h1, .subPageBody .markdown-body h2, .subPageBody .markdown-body h3, .subPageBody .markdown-body h4, .subPageBody .markdown-body h5, .subPageBody .markdown-body h6, .subPageBody .markdown-body p, .subPageBody .markdown-body li {
+	color: #fff;
 }
 
 h1 {
