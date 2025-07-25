@@ -4,7 +4,7 @@ title: Legal Disclosure
 include_in_header: false
 ---
 
-# Imprint
+# Legal Disclosure
 
 **Information according to § 5 TMG (German law)**
 
@@ -21,4 +21,5 @@ Phone: +49 156 79 657 010
 E-Mail: felix.digitallabs@proton.me
 
 **German VAT ID (USt-IdNr, according to § 27 a Umsatzsteuergesetz)**
+
 TBD
