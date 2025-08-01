@@ -3,158 +3,87 @@ layout: page
 title: Privacy Policy
 include_in_header: false
 ---
-This Privacy Notice for **Felix Plagge Digital Labs** ("we," "us," or "our") describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:
+This privacy policy applies to the Otter Day app (hereby referred to as "Application") for mobile devices that was created by Felix Plagge Digital Labs (hereby referred to as "Service Provider") as a Freemium service. This service is intended for use "AS IS".
 
-- Visit our website at [https://felixplagge.dev/otter_landing_page/](https://felixplagge.dev/otter_landing_page/) or any website of ours that links to this Privacy Notice
-- Download and use our mobile application **Otter Day**, or any other application of ours that links to this Privacy Notice
-- Use **Otter Day**, a digital service we provide
-- Engage with us in other related ways, including any sales, marketing, or events
+**Contact details of the Data Protection Officer**  
+If you have any questions about our processing of your personal data or wish to exercise your GDPR rights, you may contact our Data Protection Officer (DPO) at:  
 
-**Questions or concerns?** Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at **felix.digitallabs@proton.me**.
+Name: Felix Manuel Plagge
 
-## **SUMMARY OF KEY POINTS**
-This summary provides key points from our Privacy Notice, and you can find more details about each topic by using the table of contents below:
+Postal address: Eintrachtstr. 72, 50668, Cologne, Germany
 
-- **What personal information do we process?**  
-  We collect personal information depending on how you interact with us and the Services, including the choices you make and features you use. Learn more about *personal information you disclose to us*.
+Phone: + 49 15679 657010
 
-- **Do we process any sensitive personal information?**  
-  We do not process sensitive personal information.
+Email: [felix.digitallabs@proton.me](mailto:felix.digtallabs@proton.me)
 
-- **Do we collect any information from third parties?**  
-  We do not collect any information from third parties.
+The DPO acts as the main point of contact for all privacy-related matters.
 
-- **How do we process your information?**  
-  To provide, improve, and administer our Services; communicate with you; ensure security and fraud prevention; comply with laws; and other purposes with your consent. Learn more about *how we process your information*.
+**Information Collection and Use**
 
-- **When and with whom do we share personal information?**  
-  We share information in specific situations and only with specific third parties. Learn more about *when and with whom we share your personal information*.
+The Application collects information *when you opt in* to data collection via Posthog and Sentry. This information may include information such as
 
-- **How do we keep your information safe?**  
-  We use organizational and technical measures to maintain your information’s security although no system is completely secure. Learn more about *how we keep your information safe*.
+- Your device's Internet Protocol address (e.g. IP address)
+- The pages of the Application that you visit, the time and date of your visit, the time spent on those pages
+- The time spent on the Application
+- The operating system you use on your mobile device
 
-- **What are your rights?**  
-  Your rights depend on your location and applicable laws, including access, correction, deletion, and data portability. Learn more about *your privacy rights*.
+When you choose to opt-in to data collection via Posthog and Sentry, the Application collects your device's location, which helps the Service Provider determine your approximate geographical location and make use of in below ways:
 
-- **How do you exercise your rights?**  
-  The easiest way is by submitting a *data subject access request* or contacting us.
+- Geolocation Services: The Service Provider utilizes coarse location data (GeoIP2/Posthog) for analytics. The median error is approx 2.6km in the USA.
+- Analytics and Improvements: Aggregated and anonymized location data helps the Service Provider to analyze user behavior, identify trends, and improve the overall performance and functionality of the Application.
 
-- **Want to learn more?**  
-  Review our full Privacy Notice.
+The Service Provider may use the information you provided to contact you from time to time to provide you with important information, required notices and marketing promotions.
 
-## **TABLE OF CONTENTS**
+For a better experience, while using the Application, the Service Provider may require you to provide us with certain personally identifiable information. The information that the Service Provider request will be retained by them and used as described in this privacy policy.
 
-1. [WHAT INFORMATION DO WE COLLECT?](#1-what-information-do-we-collect)
-2. [HOW DO WE PROCESS YOUR INFORMATION?](#2-how-do-we-process-your-information)
-3. [WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL INFORMATION?](#3-what-legal-bases-do-we-rely-on-to-process-your-personal-information)
-4. [WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?](#4-when-and-with-whom-do-we-share-your-personal-information)
-5. [HOW LONG DO WE KEEP YOUR INFORMATION?](#5-how-long-do-we-keep-your-information)
-6. [HOW DO WE KEEP YOUR INFORMATION SAFE?](#6-how-do-we-keep-your-information-safe)
-7. [DO WE COLLECT INFORMATION FROM MINORS?](#7-do-we-collect-information-from-minors)
-8. [WHAT ARE YOUR PRIVACY RIGHTS?](#8-what-are-your-privacy-rights)
-9. [CONTROLS FOR DO-NOT-TRACK FEATURES](#9-controls-for-do-not-track-features)
-10. [DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?](#10-do-united-states-residents-have-specific-privacy-rights)
-11. [DO OTHER REGIONS HAVE SPECIFIC PRIVACY RIGHTS?](#11-do-other-regions-have-specific-privacy-rights)
-12. [DO WE MAKE UPDATES TO THIS NOTICE?](#12-do-we-make-updates-to-this-notice)
-13. [HOW CAN YOU CONTACT US ABOUT THIS NOTICE?](#13-how-can-you-contact-us-about-this-notice)
-14. [HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?](#14-how-can-you-review-update-or-delete-the-data-we-collect-from-you)
+For the data collection of these two Third-Party Services, as well as for Google AdMob and RevenueCat, we refer to their privacy policy.
 
-## 1. **WHAT INFORMATION DO WE COLLECT?**
+**Third-Party Services Used in Our App**
 
-### Personal information you disclose to us
-We collect personal information that you voluntarily provide when you express an interest in us or our products and Services, participate in activities, or contact us. This may include:
+To improve your experience, ensure app security, provide functionality, and support the operation and monetization of our app, we utilize several third-party services, some of which may process personal data. The following outlines the purpose and data usage for each integrated service:
 
-- Purchases made in **Otter Day**
-- Device identifier
+Google AdMob  
+We use Google AdMob to display advertisements within our app. AdMob collects device and usage information to deliver relevant ads, prevent fraud, and report ad performance. This may include IP addresses, advertising IDs, and analytics on ad interactions, which help us monetize the app while maintaining compliance with Google’s policies[](https://support.google.com/admob/answer/6128543?hl=en).
 
-### Sensitive Information
-We do *not* process sensitive personal information.
+Sentry (EU hosted)  
+Sentry is an application monitoring and error-tracking tool. It helps us identify and resolve technical issues by collecting data on app crashes, software bugs, and performance problems. Sentry may process technical information such as device type, operating system, and error logs to ensure service reliability and security. Our Sentry instance is hosted in the EU to better align with regional data protection requirements[](https://sentry.io/privacy/).
 
-### Payment Data
-Payment processing data, including payment instrument number and security codes, is handled by Apple and RevenueCat. See their privacy policies here:
-- [Apple Privacy](https://www.apple.com/legal/privacy/en-ww/)
-- [RevenueCat Privacy](https://www.revenuecat.com/privacy/)
+RevenueCat  
+RevenueCat manages in-app purchases and subscriptions. It processes data such as purchase history, receipts, and user identifiers to handle payment processing, subscription management, and to provide you with access to paid features. RevenueCat uses secure storage and is based in the United States, ensuring both operational effectiveness and regulatory compliance[](https://www.revenuecat.com/privacy).
 
-### Application Data
-If you use our application(s), we may collect device-related information such as mobile device ID, model, OS, version, system configuration, browser type/version, hardware model, carrier, IP address, network, and app usage features.
+PostHog (EU hosted)  
+We use PostHog as an analytics platform to understand how users interact with our app and improve its usability and performance. PostHog collects aggregated usage statistics (such as feature usage, session lengths, and navigation flows). Our deployment is EU-hosted, ensuring your data remains within the European Economic Area and is subject to EU data protection laws.
 
-### Push Notifications
-We may ask to send you push notifications about your account or features, which you can disable in your device settings.
+For each service, personal data is only collected and processed for the stated purposes, based on legitimate interest, contractual necessity, or—where required—your explicit consent. Where possible, data is stored and processed within the EU, and transfers outside the EU are safeguarded with appropriate legal mechanisms such as Standard Contractual Clauses or adequacy decisions. [](https://posthog.com/terms)
 
-### Information automatically collected
-When you visit, use, or navigate our Services we automatically collect information such as:
+You may contact us at any time to exercise your data subject rights, including access, rectification, erasure, or objection to processing as set forth in the GDPR.
 
-- IP address
-- Browser and device characteristics
-- Operating system and version
-- Language preferences
-- Referring URLs
-- Usage data including timestamps, pages viewed, searches, errors, and system activity
+**Opt-Out Rights**
 
-## 2. **HOW DO WE PROCESS YOUR INFORMATION?**
-We process information to provide and improve our Services, communicate with you, prevent fraud, comply with laws, and with your consent for other purposes such as:
+The use of Sentry and Posthog services within this application is strictly on an opt-in basis. By choosing to enable these services, you consent to the collection and processing of telemetry and analytics data as described in our privacy policy.
 
-- Delivering the requested service
-- Protecting individuals in emergency situations
+You retain full control over your data and can opt out of these services at any time. This can be done by disabling the relevant settings within the application or by uninstalling the application entirely using the standard methods provided by your device or application marketplace.
 
-## 3. **WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL INFORMATION?**
-Under applicable laws (such as GDPR for EU/UK), we process your data based on:
+Should you choose to opt out, data collection through Sentry and Posthog will cease immediately, ensuring your privacy preferences are fully respected.
 
-- Your consent (which can be withdrawn at any time)
-- Performance of a contract with you
-- Legal obligations
-- Vital interests
+**Data Retention Policy**
 
-Similar provisions apply to Canada and other jurisdictions.
+The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you'd like them to delete User Provided Data that you have provided via the Application, please contact them at felix.digitallabs@proton.me and they will respond in a reasonable time.
 
-## 4. **WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?**
-We share your information with vendors, consultants, or service providers who perform work for us under contract, such as:
+**Security**
 
-- Mobile App Measurement by Adjust GmbH
+The Service Provider is concerned about safeguarding the confidentiality of your information. The Service Provider provides physical, electronic, and procedural safeguards to protect information the Service Provider processes and maintains.
 
-We may share your data during business transfers, with business partners, or through third-party offer walls featured in the app. We require third parties to safeguard your information and prevent unauthorized sharing.
+**Limitation of Liability**
 
-## 5. **HOW LONG DO WE KEEP YOUR INFORMATION?**
-We retain your data only as long as necessary to fulfill the purposes described unless a longer retention is required by law. After that, your data will be deleted or anonymized.
+Notwithstanding any damages that You might incur, the entire liability of the Company and any of its suppliers under any provision of this Terms and Your exclusive remedy for all of the foregoing shall be limited to the amount actually paid by You through the Service or 100 USD if You haven't purchased anything through the Service. To the maximum extent permitted by applicable law, in no event shall the Company or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever (including, but not limited to, damages for loss of profits, loss of data or other information, for business interruption, for personal injury, loss of privacy arising out of or in any way related to the use of or inability to use the Service, third-party software and/or third-party hardware used with the Service, or otherwise in connection with any provision of this Terms), even if the Company or any supplier has been advised of the possibility of such damages and even if the remedy fails of its essential purpose. Some states do not allow the exclusion of implied warranties or limitation of liability for incidental or consequential damages, which means that some of the above limitations may not apply. In these states, each party's liability will be limited to the greatest extent permitted by law.
 
-## 6. **HOW DO WE KEEP YOUR INFORMATION SAFE?**
-We implement reasonable technical and organizational security measures to protect your data but cannot guarantee absolute security. Transmission of your data is at your own risk.
+**Changes**
 
-## 7. **DO WE COLLECT INFORMATION FROM MINORS?**
-We do not knowingly collect personal information from or market to anyone under 18 years of age. If we learn that we have data from a minor, we will deactivate and delete it promptly.
+This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes to the Privacy Policy by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.
 
-## 8. **WHAT ARE YOUR PRIVACY RIGHTS?**
-Depending on your location, you may have rights such as:
+This privacy policy is effective as of 2025-08-01
 
-- Accessing, correcting, or deleting your personal data
-- Objecting to or restricting processing
-- Data portability
-- Withdrawing consent
+**Your Consent**
 
-Please contact us at **felix.digitallabs@proton.me** to exercise your rights.
-
-## 9. **CONTROLS FOR DO-NOT-TRACK FEATURES**
-We do not currently respond to Do-Not-Track signals due to the lack of a uniform standard.
-
-## 10. **DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?**
-Residents of certain states have rights to know, access, correct, and delete data, and to opt out of certain processing activities. For details and how to exercise your rights, please contact us.
-
-## 11. **DO OTHER REGIONS HAVE SPECIFIC PRIVACY RIGHTS?**
-Residents of Australia, New Zealand, South Africa, and other regions have specific rights under their laws. For complaints, contact the relevant authorities as described in the full policy.
-
-## 12. **DO WE MAKE UPDATES TO THIS NOTICE?**
-Yes, we update this Privacy Notice as needed. Updates will have a revised date at the top, and material changes may be notified directly or via prominent posting.
-
-## 13. **HOW CAN YOU CONTACT US ABOUT THIS NOTICE?**
-You can contact our Data Protection Officer at:  
-Felix Plagge Digital Labs  
-Data Protection Officer  
-Eintrachtstraße 72  
-50668 Cologne  
-Germany  
-Email: **felix.digitallabs@proton.me**
-
-## 14. **HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?**
-To request access, correction, deletion, or to withdraw consent, please submit a *data subject access request* or contact us via the details above.
-
-*If you would like any section expanded, simplified, or further formatted, please let me know!*
+By using the Application, you are consenting to the processing of your information as set forth in this Privacy Policy now and as amended by us.
