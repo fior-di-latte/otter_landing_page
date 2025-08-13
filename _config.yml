@@ -115,6 +115,17 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - vendor/
+  - node_modules/
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - yarn.lock
+  - .bundle/
+  - tmp/
+  - scripts/
+  - bin/
 
 collections:
   pages:
