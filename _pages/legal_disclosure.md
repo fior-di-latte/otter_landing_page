@@ -14,6 +14,8 @@ Eintrachtstr. 72
 
 50668 Cologne, Germany
 
+VAT-Number: DE456031092
+
 **Contact**
 
 Phone: +49 156 79 657 010
