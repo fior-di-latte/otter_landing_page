@@ -1,0 +1,353 @@
+.features {
+  border-top: 1px solid var(--line);
+}
+.section-heading {
+  margin-bottom: 64px;
+}
+.section-heading p {
+  font-size: 18px;
+}
+.feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 36px;
+}
+.feature-visual {
+  height: 400px;
+  min-width: 0;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #9dbcc32d;
+  border-radius: var(--radius);
+  background:
+    radial-gradient(ellipse at 50% 70%, #2a465549, transparent 78%),
+    linear-gradient(145deg, #1a263177, #0b141d);
+  box-shadow: inset 0 1px #fff03;
+}
+.feature-copy {
+  padding: 25px 20px 25px 0;
+  max-width: 490px;
+}
+.feature-copy .eyebrow {
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+.feature-copy h3 {
+  max-width: 420px;
+  margin-bottom: 20px;
+}
+.feature-copy p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+.feature-copy .text-link {
+  font-size: 14px;
+}
+.feature-phone {
+  height: 362px;
+  width: 204px;
+  border: 3px solid #63717c88;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #080b0d;
+  box-shadow: 0 20px 40px #0006;
+}
+.feature-phone img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.level-map {
+  width: min(350px, calc(100% - 60px));
+}
+.level-map > .eyebrow {
+  font-size: 9px;
+  margin-bottom: 25px;
+}
+.level-bars {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  height: 168px;
+  align-items: end;
+}
+.level-bars > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: stretch;
+  gap: 8px;
+}
+.level-bars i {
+  display: block;
+  height: calc(15px + var(--level) * 20px);
+  border: 1px solid #c8dfec4a;
+  background: linear-gradient(#afc9d5, #375465);
+  opacity: calc(0.35 + var(--level) * 0.1);
+  border-radius: 5px 5px 2px 2px;
+}
+.level-bars span {
+  text-align: center;
+  font-size: 10px;
+  color: #a8bdcb;
+}
+.range {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid var(--line);
+  margin-top: 20px;
+  padding-top: 18px;
+  font:
+    400 24px "Anta",
+    sans-serif;
+}
+.range span:last-child {
+  text-align: right;
+}
+.range small {
+  display: block;
+  font:
+    500 9px "Turret Road",
+    sans-serif;
+  letter-spacing: 0.1em;
+  color: #9bb1bf;
+  margin-bottom: 8px;
+}
+.academy-art {
+  text-align: center;
+}
+.academy-art img {
+  width: 192px;
+  margin: 0 auto 32px;
+}
+.academy-art strong {
+  display: block;
+  font:
+    400 35px "Anta",
+    sans-serif;
+  margin-bottom: 12px;
+}
+.academy-art span {
+  font-size: 13px;
+  color: #b7acbf;
+}
+.crystal-art {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+.crystal-art img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+.crystal-art .eyebrow {
+  font-size: 9px;
+  margin: 0;
+}
+.iq-art {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.iq-art > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 40%;
+  mask-image: linear-gradient(#000 60%, #0005);
+}
+.iq-art > span {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font:
+    400 34px "Anta",
+    sans-serif;
+}
+.iq-art small {
+  display: block;
+  font:
+    500 9px "Turret Road",
+    sans-serif;
+  letter-spacing: 0.1em;
+  margin-top: 10px;
+}
+.widget-art {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border: 1px solid #b6ccca68;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 15px 45px #0008;
+}
+.widget-art > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.widget-art > div {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent 40%, #111d14dd);
+  padding: 25px;
+  display: flex;
+  align-items: end;
+  gap: 7px;
+  flex-wrap: wrap;
+  align-content: end;
+}
+.widget-art div img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+.widget-art strong {
+  font:
+    400 33px "Anta",
+    sans-serif;
+  line-height: 1;
+}
+.widget-art span {
+  width: 100%;
+  font-size: 13px;
+  color: #e0ebdf;
+}
+.feature-note {
+  text-align: center;
+  margin-top: 35px;
+}
+.reviews {
+  border-top: 1px solid var(--line);
+}
+.review-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 24px;
+  margin-bottom: 26px;
+}
+.review-heading h2 {
+  font-size: 46px;
+}
+.carousel-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.carousel-controls button {
+  border: 1px solid #bad0d440;
+  background: #16242c;
+  border-radius: 50%;
+  width: 47px;
+  height: 47px;
+  font-size: 21px;
+}
+.review-track {
+  display: flex;
+  gap: 22px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: #526976 #111b22;
+  padding-bottom: 20px;
+}
+.review {
+  flex: 0 0 calc((100% - 22px) / 2);
+  scroll-snap-align: start;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 32px;
+  background: linear-gradient(135deg, #1a273180, #0c131b);
+  display: flex;
+  flex-direction: column;
+}
+.review .eyebrow {
+  font-size: 9px;
+  color: #94a7b5;
+}
+.review blockquote {
+  font:
+    400 26px/1.4 "Anta",
+    sans-serif;
+  margin: 0 0 30px;
+}
+.review figcaption {
+  font-size: 12px;
+  color: #94a7b5;
+  margin-top: auto;
+}
+.guide-teaser {
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 60px;
+  align-items: center;
+}
+.guide-teaser > img {
+  border-radius: var(--radius);
+  width: 100%;
+}
+.guide-teaser h2 {
+  font-size: 46px;
+}
+.guide-teaser .text-link {
+  display: flex;
+  width: fit-content;
+  margin-top: 15px;
+}
+.download {
+  text-align: center;
+  padding-block: 100px;
+  border-top: 1px solid var(--line);
+}
+.download h2 {
+  font-size: clamp(38px, 4.5vw, 60px);
+}
+.download .stores {
+  justify-content: center;
+  margin-top: 28px;
+}
+.download .fine {
+  margin-top: 20px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  border-top: 1px solid var(--line);
+  padding-block: 50px 65px;
+}
+.footer p {
+  font-size: 12px;
+  margin-top: 18px;
+}
+.footer nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 35px;
+  font-size: 12px;
+  color: #a4b5c1;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.award-story .text-link {
+  display: flex;
+  width: fit-content;
+  margin-top: 8px;
+}
+.award-banner[open] .award-story {
+  animation: liv-in 0.45s ease both;
+}

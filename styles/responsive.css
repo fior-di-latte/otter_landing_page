@@ -1,0 +1,266 @@
+@media (min-width: 1100px) {
+  .hero-product .phone {
+    animation: phone-arrive 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+  @keyframes phone-arrive {
+    from {
+      opacity: 0;
+      transform: translateY(25px) rotate(0);
+    }
+    to {
+      opacity: 1;
+      transform: rotate(3deg);
+    }
+  }
+}
+@media (max-width: 1050px) {
+  .wrap {
+    width: calc(100% - 64px);
+  }
+  .nav {
+    gap: 24px;
+  }
+  .nav nav {
+    gap: 22px;
+  }
+  .hero {
+    gap: 20px;
+  }
+  .hero h1 {
+    font-size: 86px;
+  }
+  .hero .stores {
+    gap: 10px;
+  }
+  .store {
+    min-width: 166px;
+    padding: 12px;
+  }
+  .store strong {
+    font-size: 18px;
+  }
+  .lead {
+    font-size: 19px;
+  }
+  .phone {
+    width: 265px;
+  }
+  .orbit {
+    width: 330px;
+    height: 330px;
+  }
+  .orbit-two {
+    width: 390px;
+    height: 390px;
+  }
+  .try-section {
+    gap: 40px;
+  }
+  .feature {
+    gap: 45px;
+  }
+  .feature-visual {
+    height: 375px;
+  }
+  .feature-copy p {
+    font-size: 17px;
+  }
+  .feature-phone {
+    height: 340px;
+    width: 192px;
+  }
+  .guide-teaser {
+    gap: 35px;
+  }
+  .article-layout {
+    gap: 40px;
+    grid-template-columns: 170px minmax(0, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .nav {
+    height: 92px;
+  }
+  .nav .wordmark {
+    font-size: 17px;
+    gap: 8px;
+  }
+  .nav .wordmark img {
+    width: 31px;
+    height: 31px;
+  }
+  .nav-cta {
+    display: none;
+  }
+  .nav nav {
+    gap: 24px;
+  }
+  .award-banner summary {
+    padding: 15px 18px;
+  }
+  .award-banner summary > span:nth-child(2) {
+    display: block;
+  }
+  .award-banner summary span span {
+    display: block;
+    font-size: 11px;
+  }
+  .award-story {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+  .hero {
+    min-height: 700px;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 10px;
+    padding-block: 55px 70px;
+  }
+  .hero h1 {
+    font-size: 72px;
+  }
+  .hero .eyebrow {
+    font-size: 9px;
+  }
+  .hero .lead {
+    font-size: 17px;
+  }
+  .hero .stores {
+    flex-direction: column;
+    align-items: start;
+  }
+  .hero .store {
+    min-width: 185px;
+  }
+  .hero .fine {
+    font-size: 10px;
+    max-width: 220px;
+  }
+  .phone {
+    width: 230px;
+  }
+  .orbit {
+    width: 270px;
+    height: 270px;
+  }
+  .orbit-two {
+    width: 300px;
+    height: 300px;
+  }
+  .product-caption {
+    font-size: 7px;
+  }
+  .section {
+    padding-block: 75px;
+  }
+  .try-section {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .section-intro h2 br {
+    display: none;
+  }
+  .section-intro p {
+    margin-bottom: 5px;
+  }
+  .demo {
+    max-width: 620px;
+    width: 100%;
+  }
+  .feature {
+    gap: 30px;
+    margin-bottom: 26px;
+  }
+  .feature-visual {
+    height: 350px;
+  }
+  .feature-phone {
+    width: 178px;
+    height: 316px;
+  }
+  .feature-copy {
+    padding-right: 0;
+  }
+  .feature-copy h3 {
+    font-size: 32px;
+  }
+  .feature-copy p {
+    font-size: 16px;
+  }
+  .feature-copy .eyebrow {
+    font-size: 9px;
+  }
+  .range {
+    font-size: 20px;
+  }
+  .level-map {
+    width: calc(100% - 42px);
+  }
+  .level-bars {
+    gap: 8px;
+  }
+  .academy-art strong {
+    font-size: 27px;
+  }
+  .academy-art img {
+    width: 170px;
+  }
+  .academy-art span {
+    font-size: 11px;
+  }
+  .crystal-art img {
+    width: 260px;
+    height: 260px;
+  }
+  .widget-art {
+    width: 215px;
+    height: 215px;
+  }
+  .review-heading h2,
+  .guide-teaser h2 {
+    font-size: 36px;
+  }
+  .review {
+    padding: 25px;
+    flex-basis: 75%;
+  }
+  .review blockquote {
+    font-size: 25px;
+  }
+  .guide-teaser {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+  .guide-teaser > img {
+    height: 340px;
+    object-fit: cover;
+    object-position: 65%;
+  }
+  .footer {
+    gap: 30px;
+  }
+  .article-layout {
+    display: block;
+  }
+  .contents {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 20px;
+    margin-bottom: 45px;
+  }
+  .contents .eyebrow {
+    display: none;
+  }
+  .article {
+    max-width: none;
+  }
+  .page-head {
+    padding-top: 45px;
+  }
+  .calculator .button {
+    margin: 12px 0 0;
+  }
+  .award-story h2 {
+    font-size: 38px;
+  }
+}
