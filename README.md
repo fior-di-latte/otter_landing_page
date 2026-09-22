@@ -20,7 +20,7 @@ Static HTML with local fonts and images. JavaScript enhances the date challenge,
 
 ## Deploy
 
-`vercel.json` replaces the legacy Jekyll build with `npm run build`, output `dist`, framework preset disabled. Existing Vercel GitHub integration creates branch previews and deploys production branch `master` to the custom domain. GitHub Actions validates builds and tests; no GitHub Pages workflow is added.
+`vercel.json` replaces the legacy Jekyll build with `npm run build`, output `dist`, framework preset disabled. Existing Vercel GitHub integration creates branch previews and deploys production branch `master` to the custom domain. GitHub Actions validates builds and tests. Legacy GitHub Pages publishing was disabled for this landing-page repository; the separate personal homepage repository remains on GitHub Pages.
 
 Push branch → inspect Vercel preview and CI → merge to master → verify production homepage, guide, FAQ, legal URLs, sitemap and 404.
 
