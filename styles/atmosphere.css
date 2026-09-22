@@ -1,0 +1,148 @@
+/* Wide, feathered pools of the hero's blue; anchored to content, not scroll position. */
+main {
+  isolation: isolate;
+  overflow: clip;
+}
+.try-section,
+.features,
+.reviews,
+.download {
+  position: relative;
+}
+.try-section::before,
+.features::before,
+.features::after,
+.reviews::before,
+.download::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+  width: min(150vw, 1700px);
+  height: 1050px;
+  background: radial-gradient(
+    ellipse at center,
+    #243e4c70 0%,
+    #1d34433b 30%,
+    transparent 69%
+  );
+}
+.try-section::before {
+  top: -180px;
+  left: -65%;
+}
+.features::before {
+  top: 12%;
+  right: -63%;
+}
+.features::after {
+  bottom: 3%;
+  left: -63%;
+}
+.reviews::before {
+  top: -160px;
+  right: -55%;
+}
+.download::before {
+  height: 700px;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.7;
+}
+.award-mark {
+  flex: 0 0 54px;
+}
+.award-mark img {
+  width: 54px;
+  height: 54px;
+}
+.review .eyebrow {
+  margin-bottom: 12px;
+}
+.review-stars {
+  color: #e7d7a8;
+  font-size: 19px;
+  letter-spacing: 0.18em;
+  line-height: 1;
+  margin-bottom: 24px;
+}
+.guide-app-intro {
+  padding: 27px 30px;
+  margin-bottom: 40px;
+  border: 1px solid #a8c6d33d;
+  border-radius: 16px;
+  background:
+    radial-gradient(ellipse at 90% 0%, #34546b60, transparent 75%), #14212bd9;
+}
+.guide-app-intro .eyebrow {
+  margin-bottom: 10px;
+}
+.guide-app-intro .guide-app-title {
+  font-family: "Anta", system-ui, sans-serif;
+  color: var(--ink);
+  line-height: 1.15;
+  font-size: clamp(24px, 2.5vw, 32px);
+  margin-bottom: 12px;
+  letter-spacing: -0.025em;
+}
+.guide-app-intro p {
+  font-size: 16px;
+  margin-bottom: 22px;
+  max-width: 630px;
+}
+@media (max-width: 800px) {
+  .try-section::before,
+  .features::before,
+  .features::after,
+  .reviews::before {
+    height: 850px;
+    width: 160vw;
+  }
+  .features::before {
+    right: -80%;
+  }
+  .features::after {
+    left: -80%;
+  }
+}
+@media (max-width: 560px) {
+  .award-mark {
+    flex-basis: 38px;
+  }
+  .award-mark img {
+    width: 38px;
+    height: 38px;
+  }
+  .award-banner summary {
+    gap: 8px;
+  }
+  .award-more {
+    white-space: normal;
+  }
+  .guide-app-intro {
+    padding: 22px 18px;
+    margin-bottom: 32px;
+  }
+  .guide-app-intro .eyebrow {
+    font-size: 9px;
+  }
+  .guide-app-intro p {
+    font-size: 15px;
+  }
+  .guide-app-intro .stores {
+    gap: 8px;
+  }
+  .guide-app-intro .store {
+    min-width: 0;
+    flex: 1;
+    padding: 12px 9px;
+    gap: 7px;
+  }
+  .guide-app-intro .store strong {
+    font-size: 16px;
+  }
+  .guide-app-intro .store small {
+    font-size: 8px;
+  }
+}

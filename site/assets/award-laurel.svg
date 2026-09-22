@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <g id="branch" fill="#e7d7a8">
+      <path d="M28 55C12 50 7 30 19 12" fill="none" stroke="#e7d7a8" stroke-width="1.2" stroke-linecap="round"/>
+      <ellipse cx="17" cy="15" rx="2.3" ry="5" transform="rotate(37 17 15)"/>
+      <ellipse cx="10" cy="22" rx="2.3" ry="5" transform="rotate(-18 10 22)"/>
+      <ellipse cx="17" cy="25" rx="2.3" ry="5" transform="rotate(43 17 25)"/>
+      <ellipse cx="8" cy="33" rx="2.3" ry="5" transform="rotate(-30 8 33)"/>
+      <ellipse cx="16" cy="35" rx="2.3" ry="5" transform="rotate(24 16 35)"/>
+      <ellipse cx="12" cy="44" rx="2.3" ry="5" transform="rotate(-45 12 44)"/>
+      <ellipse cx="21" cy="44" rx="2.3" ry="5" transform="rotate(12 21 44)"/>
+      <ellipse cx="21" cy="52" rx="2.3" ry="5" transform="rotate(-65 21 52)"/>
+    </g>
+  </defs>
+  <use href="#branch"/>
+  <use href="#branch" transform="translate(64 0) scale(-1 1)"/>
+  <path d="m32 21 2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.9-5.4 2.9 1-6-4.4-4.3 6.1-.9Z" fill="#e7d7a8"/>
+</svg>
