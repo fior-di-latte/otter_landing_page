@@ -1,113 +1,33 @@
-# Automatic App Landing Page
-**Create and deploy an iOS app landing page on GitHub Pages in only five minutes.**
+# Otter Day website
 
-Designed for GitHub Pages for super easy set up. 
+Production: https://www.otterday.app/ — existing Vercel integration. The personal homepage at felixplagge.dev is a separate repository and is not changed.
 
-🔧 Fork this repo
+## Develop
 
-🗝 Enter iOS App ID in `_config.yml`
+Node.js 22+: `npm ci`, `npm run build`, `npm test`, `npm start`.
+Open http://127.0.0.1:8770/. Rebuild and reload after edits.
 
-📲 Upload video preview or screenshot
+Static HTML with local fonts and images. JavaScript enhances the date challenge, review carousel and guide checker. No browser framework, analytics or external CDN.
 
-🎨 Customise site in `_config.yml` (no HTML/CSS)
+- `scripts/{home,guide,faq}.mjs`: English content.
+- `scripts/components.mjs`: shared navigation, downloads, footer, metadata.
+- `styles/`: styles concatenated at build time.
+- `site/assets/`: app assets, generated illustrations, fonts, browser modules.
+- `content/legal/`: existing legal documents, preserved verbatim.
+- `scripts/build.mjs`: emits `dist/`, sitemap, robots.txt and 404.
+- `test/`: all 146,097 dates in 1700–2099 plus generated-page validation.
+- `docs/`: source provenance, SEO and release evidence.
 
-📝 Write Privacy Policy as markdown in `privacypolicy.md`
+## Deploy
 
-🕒 Keep a changelog in `CHANGELOG.md`
+`vercel.json` replaces the legacy Jekyll build with `npm run build`, output `dist`, framework preset disabled. Existing Vercel GitHub integration creates branch previews and deploys production branch `master` to the custom domain. GitHub Actions validates builds and tests; no GitHub Pages workflow is added.
 
-✅ Site becomes live at GitHub Pages repository URL, e.g. `https://your-username.github.io/your-repo-name/`.
+Push branch → inspect Vercel preview and CI → merge to master → verify production homepage, guide, FAQ, legal URLs, sitemap and 404.
 
-<img src="https://emilbaehr.com/files/jayson1.png" width="440"> <img src="https://emilbaehr.com/files/slor1.png" width="440">
+Rollback: use Vercel deployment history or revert the merge. Original site remains in Git history at `e836b98482aa78698c780bc194afb9f5ceb88cad`.
 
+## Content rules
 
+Mock reviews are visibly fictional and excluded from rating/review structured data. Replace them with attributable, consented feedback before presenting them as testimonials. Award is verified against RevenueCat; generated billboard image is labelled a recreation. Feature previews refer to the upcoming app version. Five seconds is a training goal; Otter IQ is an in-game score.
 
-
-## Quick Start
-
-### Step 1: Fork this repo.
-After forking the repo, your site will be live immediately on your personal Github Pages account, e.g. `https://yourusername.github.io/your-repo-name/`.
-
-*Make sure GitHub Pages is enabled for your repo. It might take some time for the site to propagate entirely.*
-
-
-
-### Step 2: Enter iOS App ID in `_config.yml`
-Enter your iOS app ID in the `ios_app_id` field and commit your changes. Your site will automatically rebuild with your app icon, name, price and link to App Store.
-
-You can go on with customising almost anything in the `_config.yml` file. 
-
-Things you can customise in `_config.yml`:
-- App Name
-- App Icon
-- App Description
-- App Price
-- App Store Link
-- Play Store Link
-- Press Kit Download Link
-- Cover Image
-- Cover Overlay Color
-- Background Color
-- Text Colors
-- iPhone Device Color
-- Your Name / Company Name
-- Link to Website
-- Social Links and Contact Info
-- Feature List (Title, text, icon)
-
-
-
-### Step 3: Add screenshot or video
-
-#### Adding a screenshot
-Upload a `.png` or `.jpg` of your app to the folder `assets/screenshot/`. The name does not matter. Be sure to delete the placeholder `yourscreenshot.png`.
-
-#### Adding video
-Upload your video to the folder `assets/videos/`. To have support for most browsers, you need to upload two files – one for Safari and one for Chrome/Firefox.
-
-Video formats supported by Chrome and Firefox:
-- `.webm`
-- `.ogg`
-
-Video formats supported by Safari:
-- `.mp4`
-- `.mov`
-
-#### Resolutions
-The videos and screenshots must have one of the following resolutions:
-- 828x1792
-- 1125x2436
-- 1242x2688
-
-
-
-### Step 4: Edit (or remove) Privacy Policy and Changelog
-Your site automatically includes pages for a Privacy Policy and a Changelog. Change the content of these pages by editing the `privacypolicy.md` and `CHANGELOG.md` files in the `_pages` directory.
-
-In each of the markdown files, you can set the `include_in_header:` value to either `true` or `false`. This determines if the page is included in the top navigation.
-By default, only the Changelog is included in the top navigation. The title of the navigation item can also be edited, by editing the `title:` in each markdown file.
-
-If you need to, you can create additional markdown based pages just by creating an `.md` file like the `privacypolicy.md` and `CHANGELOG.md` files in the `_pages` directory.
-
-**Please note:** The Privacy Policy and Changelog provided are written using dummy text, so please adapt each of them for your own app.
-You can also choose not to include these pages, by simple deleting the `privacypolicy.md` and `CHANGELOG.md` files.
-
-
-
-
-## Feedback
-If you have feedback regarding bugs or improvements, open an issue, @ me on Twitter or write me an email. You can find my contact info on my website.
-
-I'd love to see the sites you create using this little tool.
-
-## Credits
-- [Jekyll](https://github.com/jekyll/jekyll)
-- [FontAwesome](https://fontawesome.github.io/Font-Awesome/)
-
-## Donations
-[Donations are welcome](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=S8ZZT3JXJPN92&currency_code=USD&source=url)
-
-## Author
-[Emil Baehr](https://emilbaehr.com/)
-
-## License
-[MIT License](LICENSE)
+Calendar codes use Sunday = 0. The website picker displays Monday first.

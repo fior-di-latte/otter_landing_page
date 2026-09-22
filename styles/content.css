@@ -1,0 +1,285 @@
+.page-head {
+  padding: 65px 0 50px;
+  max-width: 830px;
+}
+.page-head h1 {
+  font-size: clamp(45px, 5.8vw, 78px);
+}
+.page-head .lead {
+  max-width: 690px;
+}
+.breadcrumb {
+  font-size: 12px;
+  color: #8fa7b5;
+  margin-bottom: 30px;
+}
+.article-layout {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: 75px;
+  align-items: start;
+}
+.contents {
+  position: sticky;
+  top: 30px;
+  border-left: 1px solid var(--line);
+  padding-left: 20px;
+  font-size: 13px;
+}
+.contents a {
+  display: block;
+  color: #9bb0bd;
+  padding: 7px 0;
+}
+.article {
+  max-width: 800px;
+  min-width: 0;
+  padding-bottom: 70px;
+}
+.article section {
+  margin-bottom: 70px;
+  scroll-margin-top: 40px;
+}
+.article h2 {
+  font-size: 37px;
+}
+.article h3 {
+  font-size: 26px;
+  margin-top: 32px;
+}
+.article p,
+.article li {
+  font-family: "Turret Road", system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 1.85;
+  color: #b6c4cd;
+}
+.article li {
+  margin-bottom: 9px;
+}
+.article strong {
+  font-weight: 700;
+  color: var(--ink);
+}
+.article a:not(.button) {
+  color: #c5e5f2;
+  border-bottom: 1px solid #c5e5f250;
+}
+.guide-image {
+  border-radius: 16px;
+  margin-bottom: 28px;
+}
+.code-strip {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 8px;
+  margin: 25px 0;
+}
+.code-strip > div {
+  background: #182730;
+  border: 1px solid var(--line);
+  text-align: center;
+  padding: 16px 2px;
+  border-radius: 8px;
+}
+.code-strip strong {
+  display: block;
+  font:
+    400 28px "Anta",
+    sans-serif;
+}
+.code-strip span {
+  font-size: 12px;
+  color: #9fb8c6;
+}
+.formula {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 30px 18px;
+  border: 1px solid #b7cdda44;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #27394480, #101c25);
+  margin: 25px 0;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.formula b {
+  font:
+    400 33px "Anta",
+    sans-serif;
+}
+.formula small {
+  font-size: 11px;
+  color: #abc1ce;
+  display: block;
+  margin-top: 7px;
+}
+.formula > span {
+  color: #7893a3;
+  font-size: 23px;
+}
+.formula .result {
+  color: #d9ead8;
+}
+.code-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 16px;
+  text-align: left;
+}
+.code-table th {
+  color: #bdced8;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+.code-table td,
+.code-table th {
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--line);
+}
+.code-table tbody tr:nth-child(odd) {
+  background: #1c2b343b;
+}
+.note {
+  border-left: 2px solid #799dad;
+  padding: 18px 24px;
+  background: #17232c80;
+  margin: 24px 0;
+}
+.note p {
+  margin: 0;
+  font-size: 16px;
+}
+.calculator {
+  padding: 28px;
+  border-radius: 16px;
+  border: 1px solid #a9c8d34d;
+  background: #13222e;
+}
+.calculator label {
+  display: block;
+  margin-bottom: 12px;
+}
+.calculator input {
+  padding: 12px;
+  background: #09141d;
+  border: 1px solid #a9c8d34d;
+  border-radius: 8px;
+  color: var(--ink);
+  max-width: 100%;
+  min-width: 0;
+}
+.calculator .button {
+  margin-left: 8px;
+}
+.calculator output {
+  display: block;
+  margin-top: 20px;
+  color: var(--ice);
+  font-size: 18px;
+}
+.faq-list {
+  max-width: 850px;
+  margin: 0 auto 90px;
+}
+.faq-group {
+  margin-bottom: 55px;
+}
+.faq-group h2 {
+  font-size: 29px;
+  margin-bottom: 22px;
+}
+.faq-item {
+  border-bottom: 1px solid var(--line);
+}
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 22px 40px 22px 0;
+  position: relative;
+  font:
+    400 20px/1.4 "Anta",
+    sans-serif;
+}
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 5px;
+  top: 20px;
+  color: #a9c3d1;
+  font:
+    400 24px "Anta",
+    sans-serif;
+}
+.faq-item[open] summary::after {
+  content: "−";
+}
+.faq-item > div {
+  padding: 0 35px 22px 0;
+}
+.faq-item p {
+  font-size: 17px;
+  line-height: 1.8;
+}
+.faq-item p:last-child {
+  margin-bottom: 0;
+}
+.faq-item a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.legal {
+  max-width: 850px;
+  margin: 30px auto 90px;
+  overflow-wrap: anywhere;
+}
+.legal h1 {
+  font-size: 48px;
+}
+.legal h2 {
+  font-size: 30px;
+}
+.legal p,
+.legal li {
+  font-family: system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.85;
+  color: #bac6ce;
+}
+.legal a {
+  text-decoration: underline;
+}
+.legal strong {
+  font-weight: 700;
+  color: var(--ink);
+}
+.reveal.is-revealed {
+  animation: reveal-in 0.65s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+@keyframes reveal-in {
+  from {
+    opacity: 0.35;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes liv-in {
+  from {
+    opacity: 0;
+    transform: translateY(15px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
