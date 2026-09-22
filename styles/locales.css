@@ -1,0 +1,167 @@
+/* Localized content may need more room than English, without shrinking body copy. */
+.language-menu {
+  position: relative;
+  flex: 0 0 auto;
+  font-size: 13px;
+}
+.language-menu summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 11px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+}
+.language-menu summary::-webkit-details-marker {
+  display: none;
+}
+.language-menu[open] summary {
+  border-color: var(--ice);
+}
+.nav .language-menu nav {
+  position: absolute;
+  z-index: 20;
+  right: 0;
+  top: calc(100% + 10px);
+  display: grid;
+  gap: 2px;
+  min-width: 175px;
+  margin: 0;
+  padding: 8px;
+  border: 1px solid #52616b;
+  border-radius: 12px;
+  background: #111c24;
+  box-shadow: 0 16px 40px #0009;
+}
+.nav .language-menu nav a {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 12px;
+  border-radius: 6px;
+  font-size: 15px;
+  color: var(--ink);
+}
+.language-menu a:hover,
+.language-menu a[aria-current] {
+  background: #ffffff0a;
+}
+:where(h1, h2, h3, h4, p, li) {
+  overflow-wrap: break-word;
+}
+html:not([lang="en"]) .hero h1 {
+  font-size: clamp(62px, 6.5vw, 94px);
+}
+html:not([lang="en"]) .hero-copy {
+  min-width: 0;
+}
+.demo-bottom {
+  gap: 16px;
+}
+.demo-bottom button {
+  flex-shrink: 0;
+}
+.learning-promise h4 {
+  text-wrap: balance;
+}
+.formula > div {
+  min-width: 0;
+}
+.formula small {
+  overflow-wrap: break-word;
+}
+@media (max-width: 1050px) {
+  .nav {
+    gap: 18px;
+  }
+  .nav nav {
+    gap: 18px;
+  }
+  html:not([lang="en"]) .hero h1 {
+    font-size: clamp(54px, 7.8vw, 80px);
+  }
+}
+@media (max-width: 800px) {
+  html:not([lang="en"]) .hero h1 {
+    font-size: 60px;
+  }
+  .nav {
+    gap: 16px;
+  }
+  .formula .result b {
+    font-size: clamp(21px, 4vw, 35px);
+  }
+}
+@media (max-width: 560px) {
+  .nav {
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 94px;
+    padding-block: 16px;
+    gap: 12px;
+  }
+  .nav > nav {
+    gap: 15px;
+  }
+  .nav .wordmark {
+    font-size: 13px;
+    gap: 7px;
+  }
+  .nav .wordmark img {
+    width: 27px;
+    height: 27px;
+  }
+  .nav nav a {
+    font-size: 12px;
+  }
+  .language-menu {
+    font-size: 11px;
+  }
+  .language-menu summary {
+    padding: 9px 7px;
+    gap: 4px;
+  }
+  .language-menu summary > span:first-child {
+    display: none;
+  }
+  html:not([lang="en"]) .hero h1 {
+    font-size: clamp(50px, 15.2vw, 80px);
+  }
+  .award-more {
+    max-width: 72px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .award-more b {
+    margin-left: 0;
+  }
+  .hint-request {
+    gap: 10px;
+  }
+  .demo-bottom {
+    align-items: start;
+  }
+  .demo-bottom button {
+    max-width: 44%;
+    white-space: normal;
+    text-align: right;
+  }
+  .formula .result b {
+    font-size: 21px;
+  }
+  .formula {
+    gap: 7px;
+  }
+  .formula small {
+    font-size: 8px;
+  }
+  .review-heading {
+    flex-wrap: wrap;
+  }
+  .review-heading > div:first-child {
+    flex: 1 1 220px;
+  }
+}

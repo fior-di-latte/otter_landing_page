@@ -1,4 +1,18 @@
-import { calendarCodes, weekdays } from "./calendar.js";
+import { calendarCodes } from "./calendar.js";
+import { setupLanguage } from "./language.js";
+setupLanguage();
+const messages = JSON.parse(
+  document.getElementById("site-messages").textContent,
+);
+const message = (key, values = {}) =>
+  messages[key].replace(/\{(\w+)\}/g, (_, token) => values[token]);
+const weekdayFormat = new Intl.DateTimeFormat(messages.locale, {
+  weekday: "long",
+  timeZone: "UTC",
+});
+const weekdays = Array.from({ length: 7 }, (_, day) =>
+  weekdayFormat.format(new Date(Date.UTC(2024, 0, 7 + day))),
+);
 const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
 const game = document.querySelector("[data-game]");
 if (game) {
@@ -10,7 +24,7 @@ if (game) {
     [2026, 9, 22],
     [2030, 12, 25],
   ];
-  const format = new Intl.DateTimeFormat("en-US", {
+  const format = new Intl.DateTimeFormat(messages.locale, {
     month: "long",
     day: "numeric",
     year: "numeric",
@@ -24,33 +38,36 @@ if (game) {
   const feedback = game.querySelector("[data-feedback]");
   const promise = game.querySelector("[data-learning-promise]");
   let round = 0,
-    complete = false;
+    complete = false,
+    assisted = false;
   const answer = () => calendarCodes(...dates[round]).weekday;
   function revealLiv() {
-    if (!liv.hidden) return;
+    if (!liv.hidden || complete) return;
+    assisted = true;
     liv.hidden = false;
-    hint.textContent = `“It’s a ${weekdays[answer()]}. You’ve got this.”`;
+    hint.textContent = message("hint", { day: weekdays[answer()] });
     ask.setAttribute("aria-expanded", "true");
-    ask.textContent = "Liv is here ✓";
+    ask.textContent = messages.livHere;
     ask.disabled = true;
   }
   function render() {
     complete = false;
+    assisted = false;
     promise.hidden = true;
     liv.hidden = true;
     hint.textContent = "";
     ask.disabled = false;
-    ask.textContent = "Ask Liv ✧";
+    ask.textContent = messages.ask;
     ask.setAttribute("aria-expanded", "false");
     game.querySelector("[data-date]").textContent = format.format(
       new Date(Date.UTC(dates[round][0], dates[round][1] - 1, dates[round][2])),
     );
     game.querySelector("[data-round]").textContent =
       `${String(round + 1).padStart(2, "0")} / 06`;
-    feedback.textContent = "Pick a weekday. Ask Liv if you need help.";
+    feedback.textContent = messages.pick;
     next.disabled = true;
     next.textContent =
-      round === dates.length - 1 ? "Play again ↻" : "Next date →";
+      round === dates.length - 1 ? messages.again : messages.next;
     buttons.forEach((button) => {
       button.disabled = false;
       button.className = "";
@@ -69,12 +86,16 @@ if (game) {
       button.className = correct ? "correct" : "incorrect";
       if (!correct) {
         revealLiv();
-        feedback.textContent = "Not quite. Liv has a clue — try again.";
+        feedback.textContent = messages.wrong;
         return;
       }
       complete = true;
-      feedback.textContent = `Correct — ${weekdays[answer()]}!`;
+      feedback.textContent = message("correct", { day: weekdays[answer()] });
+      promise.querySelector("h4").textContent = assisted
+        ? messages.assisted
+        : messages.unassisted;
       promise.hidden = false;
+      ask.disabled = true;
       buttons.forEach((item) => {
         if (item !== button) item.disabled = true;
       });
@@ -132,7 +153,7 @@ if (track) {
       behavior: reducedMotion.matches ? "instant" : "smooth",
     });
     document.querySelector("[data-review-status]").textContent =
-      `Sample review ${index + 1} of ${cards.length}. ${cards[index].querySelector("blockquote").textContent}`;
+      `${message("review", { index: index + 1, count: cards.length })} ${cards[index].querySelector("blockquote").textContent}`;
   }
   document
     .querySelector("[data-review-prev]")
@@ -156,7 +177,7 @@ if (calculator)
     if (!input.reportValidity()) return;
     const codes = calendarCodes(...input.value.split("-").map(Number));
     calculator.querySelector("output").textContent =
-      `${codes.day} + ${codes.month} + ${codes.year} = ${codes.day + codes.month + codes.year}. Remainder ${codes.weekday} → ${weekdays[codes.weekday]}.`;
+      `${codes.day} + ${codes.month} + ${codes.year} = ${codes.day + codes.month + codes.year}. ${messages.remainder} ${codes.weekday} → ${weekdays[codes.weekday]}.`;
   });
 if ("IntersectionObserver" in window && !reducedMotion.matches) {
   const observer = new IntersectionObserver(

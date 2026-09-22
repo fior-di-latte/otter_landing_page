@@ -12,6 +12,7 @@
     "start": "node scripts/serve.mjs"
   },
   "devDependencies": {
+    "linkedom": "^0.18.13",
     "marked": "^17.0.0",
     "prettier": "^3.6.2"
   }
