@@ -67,30 +67,6 @@ main {
   line-height: 1;
   margin-bottom: 24px;
 }
-.guide-app-intro {
-  padding: 27px 30px;
-  margin-bottom: 40px;
-  border: 1px solid #a8c6d33d;
-  border-radius: 16px;
-  background:
-    radial-gradient(ellipse at 90% 0%, #34546b60, transparent 75%), #14212bd9;
-}
-.guide-app-intro .eyebrow {
-  margin-bottom: 10px;
-}
-.guide-app-intro .guide-app-title {
-  font-family: "Anta", system-ui, sans-serif;
-  color: var(--ink);
-  line-height: 1.15;
-  font-size: clamp(24px, 2.5vw, 32px);
-  margin-bottom: 12px;
-  letter-spacing: -0.025em;
-}
-.guide-app-intro p {
-  font-size: 16px;
-  margin-bottom: 22px;
-  max-width: 630px;
-}
 @media (max-width: 800px) {
   .try-section::before,
   .features::before,
@@ -119,30 +95,5 @@ main {
   }
   .award-more {
     white-space: normal;
-  }
-  .guide-app-intro {
-    padding: 22px 18px;
-    margin-bottom: 32px;
-  }
-  .guide-app-intro .eyebrow {
-    font-size: 9px;
-  }
-  .guide-app-intro p {
-    font-size: 15px;
-  }
-  .guide-app-intro .stores {
-    gap: 8px;
-  }
-  .guide-app-intro .store {
-    min-width: 0;
-    flex: 1;
-    padding: 12px 9px;
-    gap: 7px;
-  }
-  .guide-app-intro .store strong {
-    font-size: 16px;
-  }
-  .guide-app-intro .store small {
-    font-size: 8px;
   }
 }

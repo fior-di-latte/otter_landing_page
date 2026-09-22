@@ -1,7 +1,14 @@
 import { image, stores, download } from "./components.mjs";
+import {
+  tutorialScene,
+  levelScene,
+  academyScene,
+  streakScene,
+  iqScene,
+  widgetScene,
+} from "./feature-scenes.mjs";
 const feature = (number, category, title, copy, visual, link = "") =>
   `<article class="feature reveal"><div class="feature-visual">${visual}</div><div class="feature-copy"><span class="eyebrow">${number} / ${category}</span><h3>${title}</h3><p>${copy}</p>${link}</div></article>`;
-const levels = `<div class="level-map" role="img" aria-label="Six levels expand from this year to 1700 through 2099"><span class="eyebrow">YOUR TIME WINDOW GROWS</span><div class="level-bars">${[1, 2, 3, 4, 5, 6].map((n) => `<div><i style="--level:${n}"></i><span>${n}</span></div>`).join("")}</div><div class="range"><span><small>LEVEL 1</small>This year</span><span><small>LEVEL 6</small>1700–2099</span></div></div>`;
 const reviews = [
   [
     "“A tiny daily puzzle with a very satisfying light-bulb moment.”",
@@ -33,12 +40,12 @@ export const home = `
     "",
   )}</fieldset><div class="demo-bottom"><p data-feedback role="status">Pick a weekday. Ask Liv if you need help.</p><button type="button" data-next disabled>Next date →</button></div><div class="learning-promise" data-learning-promise hidden><span class="eyebrow">MAKE IT A SKILL</span><h4>Now learn to do it for any date.</h4><p>Otter Day teaches you the method, step by step.</p><a class="button download-now" href="#top">Download now <span aria-hidden="true">↑</span></a></div><noscript><p>Enable JavaScript to play, or <a href="/guide/">learn the calendar trick in our guide</a>.</p></noscript></section></section>
 <section class="features wrap section" id="learn"><div class="section-heading reveal"><span class="eyebrow">LEARN. PLAY. KEEP GOING.</span><h2>A little every day.<br>A skill that stays.</h2><p>A skill you can learn. A game you want to play.</p></div>
-${feature("01", "GUIDED TUTORIALS", "Meet the method.", "Follow your otter guides through the calendar trick. Small steps, clear examples, and practice that clicks.", `<div class="feature-phone">${image("tutorial-menu", "The real tutorial menu: a scrollable learning path with Basics, Advanced and Exam, plus standalone exercises", "", false, 750, 1334)}</div>`, `<a class="text-link" href="/guide/">Explore the method <span aria-hidden="true">↗</span></a>`)}
-${feature("02", "SIX LEVELS", "Make it second nature.", "Play through ever-wider date ranges. Start with this year; reach from 1700 to 2099 in Level 6.", levels)}
-${feature("03", "SPEED ACADEMY", "Put it all together.", "Build better shortcuts in Speed Academy. With practice, work toward a weekday in five seconds.", `<div class="academy-art">${image("academy-mark", "", "", false, 192, 86)}<strong>Speed Academy</strong><span>Small shortcuts. Quicker thinking.</span></div>`)}
-${feature("04", "DAILY STREAKS", "Keep your spark alive.", "A little practice goes a long way. Return each day and keep your otter crystal glowing.", `<div class="crystal-art">${image("core", "The glowing otter crystal at the heart of your daily streak")}<span class="eyebrow">ONE DAY AT A TIME</span></div>`)}
-${feature("05", "OTTER IQ", "See how far you’ve come.", "Your in-game progress score, built as you learn and play. A record of your calendar skills — not a real-world IQ test.", `<div class="iq-art">${image("observatory", "Otter guide in the calendar mastery observatory", "", false, 862, 600)}<span>OTTER IQ<small>YOUR PROGRESS, MADE VISIBLE</small></span></div>`)}
-${feature("06", "HOME WIDGETS", "Your otter. Always with you.", "Keep a little Otter Day on your home screen. Your streak and your companion, one glance away.", `<div class="widget-art">${image("widget", "Otter resting beside softly glowing plants", "", false, 768, 768)}<div>${image("widget-mark", "", "", false, 256, 256)}<strong>2</strong><span>You’re growing.</span></div></div>`)}
+${feature("01", "GUIDED TUTORIALS", "Meet the method.", "Follow your otter guides through the calendar trick. Small steps, clear examples, and practice that clicks.", tutorialScene, `<a class="text-link" href="/guide/">Explore the method <span aria-hidden="true">↗</span></a>`)}
+${feature("02", "SIX LEVELS", "Make it second nature.", "Play through ever-wider date ranges. Start with this year; reach from 1700 to 2099 in Level 6.", levelScene)}
+${feature("03", "SPEED ACADEMY", "Put it all together.", "Build better shortcuts in Speed Academy. With practice, work toward a weekday in five seconds.", academyScene)}
+${feature("04", "DAILY STREAKS", "Keep your spark alive.", "A little practice goes a long way. Return each day and keep your otter crystal glowing.", streakScene)}
+${feature("05", "OTTER IQ", "See how far you’ve come.", "Your in-game progress score, built as you learn and play. A record of your calendar skills — not a real-world IQ test.", iqScene)}
+${feature("06", "HOME WIDGETS", "Your otter. Always with you.", "Keep a little Otter Day on your home screen. Your streak and your companion, one glance away.", widgetScene)}
 <p class="fine feature-note">App screenshots show the upcoming English version. Feature artwork illustrates the experience.</p></section>
 <section class="reviews section wrap" aria-labelledby="review-heading" aria-roledescription="carousel"><div class="review-heading"><div><span class="eyebrow">THE PLAYER PERSPECTIVE</span><h2 id="review-heading">A little curiosity.<br>A new daily ritual.</h2></div><div class="carousel-controls"><button type="button" data-review-prev disabled aria-label="Previous review" aria-controls="review-track">←</button><button type="button" data-review-next disabled aria-label="Next review" aria-controls="review-track">→</button></div></div><div class="review-track" id="review-track" tabindex="0" aria-label="Reviews; scroll to browse">${reviews.map(([q, a], i) => `<figure class="review" role="group" aria-roledescription="slide" aria-label="${i + 1} of ${reviews.length}"><span class="eyebrow">REVIEW / ${String(i + 1).padStart(2, "0")}</span><span class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</span><blockquote>${q}</blockquote><figcaption>${a}</figcaption></figure>`).join("")}</div><p class="sr-only" data-review-status role="status"></p></section>
 <section class="guide-teaser wrap section reveal"><div><span class="eyebrow">NO MAGIC. A METHOD.</span><h2>You can learn<br>to think like this.</h2><p>Three small codes. One weekday.<br>See how the calendar trick works.</p><a class="button" href="/guide/">Read the guide <span aria-hidden="true">↗</span></a><a class="text-link" href="/faq/">Questions? Start here →</a></div>${image("guide-week", "An otter tutor studies a seven-node ring representing the days of the week", "", false, 1200, 800)}</section>

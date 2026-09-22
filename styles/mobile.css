@@ -183,10 +183,6 @@
     border-radius: 0;
     box-shadow: none;
   }
-  .feature-phone {
-    height: 323px;
-    width: 182px;
-  }
   .feature-copy {
     padding: 28px 24px 30px;
   }
@@ -206,20 +202,6 @@
   }
   .level-map {
     width: calc(100% - 55px);
-  }
-  .academy-art img {
-    width: 192px;
-  }
-  .academy-art strong {
-    font-size: 30px;
-  }
-  .crystal-art img {
-    width: 285px;
-    height: 285px;
-  }
-  .widget-art {
-    width: 235px;
-    height: 235px;
   }
   .feature-note {
     font-size: 10px;
