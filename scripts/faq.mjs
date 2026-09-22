@@ -75,7 +75,7 @@ export const faqGroups = [
       ],
       [
         "Which languages are supported?",
-        "The current store release supports English, German, French, Spanish and Portuguese. Available speech features can vary by device and language. This website and its calendar guide are in English.",
+        "The current store release supports English, German, French, Spanish and Portuguese. Available speech features can vary by device and language. This website and its calendar guide are available in all five languages. Use the language menu to switch.",
       ],
       [
         "Does it need an internet connection?",

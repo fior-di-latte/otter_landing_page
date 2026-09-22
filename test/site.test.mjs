@@ -19,9 +19,9 @@ test("all pages have metadata and resolve local links, fragments and assets", as
       html,
       /<link rel="canonical" href="https:\/\/www.otterday.app\//,
     );
-    assert.match(html, /<html lang="en">/);
+    assert.match(html, /<html lang="(en|de|fr|es|pt)">/);
     for (const match of html.matchAll(/(?:href|src)="([^"<>]+)"/g)) {
-      const url = match[1];
+      const url = match[1].replace(/\?[^#]*/, "");
       if (!url.startsWith("/") && !url.startsWith("#")) continue;
       const [path, fragment] = url.split("#");
       const target = path

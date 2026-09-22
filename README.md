@@ -31,3 +31,5 @@ Rollback: use Vercel deployment history or revert the merge. Original site remai
 Mock reviews are visibly fictional and excluded from rating/review structured data. Replace them with attributable, consented feedback before presenting them as testimonials. Award is verified against RevenueCat; generated billboard image is labelled a recreation. Feature previews refer to the upcoming app version. Five seconds is a training goal; Otter IQ is an in-game score.
 
 Calendar codes use Sunday = 0. The website picker displays Monday first.
+
+Language routes, translation maintenance, the revised billboard and verification are documented in [docs/localization.md](docs/localization.md).
