@@ -48,26 +48,8 @@
 .feature-copy .text-link {
   font-size: 14px;
 }
-.feature-phone {
-  height: 362px;
-  width: 204px;
-  border: 3px solid #63717c88;
-  border-radius: 20px;
-  overflow: hidden;
-  background: #080b0d;
-  box-shadow: 0 20px 40px #0006;
-}
-.feature-phone img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 .level-map {
   width: min(350px, calc(100% - 60px));
-}
-.level-map > .eyebrow {
-  font-size: 9px;
-  margin-bottom: 25px;
 }
 .level-bars {
   display: grid;
@@ -119,109 +101,6 @@
   letter-spacing: 0.1em;
   color: #9bb1bf;
   margin-bottom: 8px;
-}
-.academy-art {
-  text-align: center;
-}
-.academy-art img {
-  width: 192px;
-  margin: 0 auto 32px;
-}
-.academy-art strong {
-  display: block;
-  font:
-    400 35px "Anta",
-    sans-serif;
-  margin-bottom: 12px;
-}
-.academy-art span {
-  font-size: 13px;
-  color: #b7acbf;
-}
-.crystal-art {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  justify-content: center;
-}
-.crystal-art img {
-  width: 300px;
-  height: 300px;
-  object-fit: contain;
-}
-.crystal-art .eyebrow {
-  font-size: 9px;
-  margin: 0;
-}
-.iq-art {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-.iq-art > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 40%;
-  mask-image: linear-gradient(#000 60%, #0005);
-}
-.iq-art > span {
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-  font:
-    400 34px "Anta",
-    sans-serif;
-}
-.iq-art small {
-  display: block;
-  font:
-    500 9px "Turret Road",
-    sans-serif;
-  letter-spacing: 0.1em;
-  margin-top: 10px;
-}
-.widget-art {
-  position: relative;
-  width: 250px;
-  height: 250px;
-  border: 1px solid #b6ccca68;
-  border-radius: 28px;
-  overflow: hidden;
-  box-shadow: 0 15px 45px #0008;
-}
-.widget-art > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.widget-art > div {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(transparent 40%, #111d14dd);
-  padding: 25px;
-  display: flex;
-  align-items: end;
-  gap: 7px;
-  flex-wrap: wrap;
-  align-content: end;
-}
-.widget-art div img {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
-}
-.widget-art strong {
-  font:
-    400 33px "Anta",
-    sans-serif;
-  line-height: 1;
-}
-.widget-art span {
-  width: 100%;
-  font-size: 13px;
-  color: #e0ebdf;
 }
 .feature-note {
   text-align: center;

@@ -194,3 +194,18 @@ if ("IntersectionObserver" in window && !reducedMotion.matches) {
     .querySelectorAll(".reveal")
     .forEach((element) => observer.observe(element));
 }
+
+const widgetScene = document.querySelector(".scene-widgets");
+if (widgetScene && "IntersectionObserver" in window) {
+  const toggle = widgetScene.querySelector("[data-scene-motion]");
+  toggle.hidden = false;
+  toggle.addEventListener("click", () => {
+    const paused = widgetScene.classList.toggle("is-paused");
+    toggle.setAttribute("aria-pressed", String(paused));
+    toggle.querySelector("span").textContent = paused ? "▷" : "Ⅱ";
+  });
+  const visibility = new IntersectionObserver((entries) => {
+    widgetScene.classList.toggle("is-visible", entries[0].isIntersecting);
+  });
+  visibility.observe(widgetScene);
+}

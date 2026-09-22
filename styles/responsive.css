@@ -65,10 +65,6 @@
   .feature-copy p {
     font-size: 17px;
   }
-  .feature-phone {
-    height: 340px;
-    width: 192px;
-  }
   .guide-teaser {
     gap: 35px;
   }
@@ -173,10 +169,6 @@
   .feature-visual {
     height: 350px;
   }
-  .feature-phone {
-    width: 178px;
-    height: 316px;
-  }
   .feature-copy {
     padding-right: 0;
   }
@@ -197,23 +189,6 @@
   }
   .level-bars {
     gap: 8px;
-  }
-  .academy-art strong {
-    font-size: 27px;
-  }
-  .academy-art img {
-    width: 170px;
-  }
-  .academy-art span {
-    font-size: 11px;
-  }
-  .crystal-art img {
-    width: 260px;
-    height: 260px;
-  }
-  .widget-art {
-    width: 215px;
-    height: 215px;
   }
   .review-heading h2,
   .guide-teaser h2 {

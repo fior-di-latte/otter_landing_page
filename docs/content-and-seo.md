@@ -25,20 +25,20 @@ Technical SEO: static crawlable HTML, one H1, unique titles/descriptions, canoni
 
 ## Asset provenance
 
-| Asset            | Source                                                                       |
-| ---------------- | ---------------------------------------------------------------------------- |
-| icon, touch icon | `otter/assets/app/app_icon_launcher.png`                                     |
-| gameplay         | Actual English 750×1334 screenshot, existing iPhone SE debug app, 2026-09-22 |
-| tutorial-menu    | Actual English screenshot of scrollable Learning menu, same device/session   |
-| academy-mark     | `otter/assets/tutorial/standalone_exercises/speed_academy.png`               |
-| liv              | `otter/assets/onboarding/liv_whisper.webp`                                   |
-| core             | `otter/assets/streak/posters/normal_poster.png`                              |
-| observatory      | `otter/assets/achievements/otter_iq_observatory_hero.webp`                   |
-| widget           | `otter/assets/home_widgets/scenes/a11.webp`                                  |
-| widget-mark      | `otter/assets/home_widgets/marks/streak.png`                                 |
-| font-0/1/2       | Anta Regular, Turret Road Medium/Bold; licenses included                     |
-| times-square     | Built-in ImageGen recreation based on user photo; visibly labelled           |
-| guide-week       | Built-in ImageGen, app observatory reference; seven nodes checked visually   |
+| Asset            | Source                                                                              |
+| ---------------- | ----------------------------------------------------------------------------------- |
+| icon, touch icon | `otter/assets/app/app_icon_launcher.png`                                            |
+| gameplay         | Actual English 750×1334 screenshot, existing iPhone SE debug app, 2026-09-22        |
+| tutorial-menu    | Actual English screenshot of scrollable Learning menu, same device/session          |
+| academy-scene    | ImageGen recreation of the app’s purple Speed Academy bolt; see `feature-scenes.md` |
+| liv              | `otter/assets/onboarding/liv_whisper.webp`                                          |
+| core             | `otter/assets/streak/posters/normal_poster.png`                                     |
+| observatory      | `otter/assets/achievements/otter_iq_observatory_hero.webp`                          |
+| widget           | `otter/assets/home_widgets/scenes/a11.webp`                                         |
+| widget-mark      | `otter/assets/home_widgets/marks/streak.png`                                        |
+| font-0/1/2       | Anta Regular, Turret Road Medium/Bold; licenses included                            |
+| times-square     | Built-in ImageGen recreation based on user photo; visibly labelled                  |
+| guide-week       | Built-in ImageGen, app observatory reference; seven nodes checked visually          |
 
 Level chart, formulas and widget composition are HTML/CSS illustrations. Source generation images, app screenshots and browser evidence remain in the app repo under `otter-landing-page/explore/implementation/`.
 
