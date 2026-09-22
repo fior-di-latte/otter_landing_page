@@ -23,6 +23,7 @@ await writeFile(
         "responsive",
         "mobile",
         "locales",
+        "atmosphere",
       ].map((name) => readFile(`styles/${name}.css`, "utf8")),
     )
   ).join("\n"),

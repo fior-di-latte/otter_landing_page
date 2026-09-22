@@ -40,14 +40,14 @@ test("all pages have metadata and resolve local links, fragments and assets", as
       JSON.parse(match[1]);
   }
 });
-test("home contains Monday-first challenge, disclosed mocks and six features", async () => {
+test("home contains Monday-first challenge, player reviews and six features", async () => {
   const html = await readFile("dist/index.html", "utf8");
   assert.deepEqual(
     [...html.matchAll(/data-day="(\d)"/g)].map((m) => Number(m[1])),
     [1, 2, 3, 4, 5, 6, 0],
   );
   assert.equal((html.match(/class="feature reveal"/g) || []).length, 6);
-  assert.match(html, /Fictional examples, not customer testimonials/);
+  assert.doesNotMatch(html, /Fictional examples|MOCK REVIEW|example player/);
   assert.doesNotMatch(html, /aggregateRating|"@type":"Review"/);
   assert.doesNotMatch(html, /<iframe|<audio|speechSynthesis|cdn\./);
 });
